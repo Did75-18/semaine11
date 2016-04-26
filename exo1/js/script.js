@@ -4,7 +4,7 @@ var choixOrdi = function(min, max) {
 
 var arrondiOrdi = Math.round(choixOrdi(0,101));// choix ordinateur arrondi
 //alert(arrondiOrdi);
-
+var texte = document.getElementById("texte");
 function jouer(){
 
 var choixJoueur = prompt("Choisissez un nombre entre 0 et 100");
