@@ -1,0 +1,82 @@
+html{
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5rem;
+	color: #666666;
+  font-family: 'Roboto',Helvetica, sans-serif;
+}
+
+/*------menu déroulant css sur http://www.frogweb.fr/menu-deroulant-vertical/ ------*/
+#menu {
+  padding:0;
+  margin:0 auto;
+  list-style:none;
+  width: 220px;
+}
+#menu ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu li {
+   color:#666666; 
+   background-image:-webkit-linear-gradient(top, #F3B82B 0%, rgb(246, 246, 246) 110%);
+   background-image: linear-gradient(to bottom, #F3B82B 0%, rgb(246, 246, 246) 110%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40;
+}
+#menu li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0;
+}
+#menu a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:2rem;
+}
+#menu ul li a, #menu li:hover li a {
+  font-size:2rem;
+}
+#menu li:hover {
+   background: #F3B82B;
+}
+#menu li li:hover {
+   background: #999;
+}
+#menu ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu li:hover li {
+  max-height: 15em;
+}
+
+/* ----autres-----*/
+
+#txtUtilisateur, #txtOrdi{
+  padding: 1.5rem;
+  font-size : 2rem;
+  color: rgb(121, 124, 128);
+  text-align: center;
+}
+#txtResult{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size : 3.5rem;
+  color: rgb(202, 0, 70);
+  text-align: center;
+}
+
