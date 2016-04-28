@@ -43,7 +43,7 @@ function choixUtilisateurFeuille(){
 function comparer(){
     if(choixUtilisateur === "Pierre"){
         if(choixOrdinateur === "Ciseaux"){
-            return txtResult.innerHTML = "'La Pierre gagne !!!'";
+            return txtResult.innerHTML = "'La pierre gagne !!!'";
         }else{
             return txtResult.innerHTML = "'La feuille gagne !!!'";
         }
@@ -57,7 +57,7 @@ function comparer(){
     }
     else if(choixUtilisateur === "Feuille"){
         if(choixOrdinateur === "Pierre"){
-            return txtResult.innerHTML = "'La Feuille gagne !!!'";
+            return txtResult.innerHTML = "'La feuille gagne !!!'";
         }else{
             return txtResult.innerHTML = "'Les ciseaux gagne !!!'";
         }
@@ -105,7 +105,7 @@ function calculer(){
 };
 
 
-function choixOrdi(){
+function jouer(){
     if (choixOrdinateur <= 0.33333) {
         choixOrdinateur = "Pierre";
     } else if(choixOrdinateur <= 0.66666) {
@@ -125,7 +125,7 @@ function choixOrdi(){
 pierre.onclick = choixUtilisateurPierre;
 ciseaux.onclick = choixUtilisateurCiseaux;
 feuille.onclick = choixUtilisateurFeuille;
-go.onclick = choixOrdi;
+go.onclick = jouer;
 
 gainUtilisateur.innerHTML = pointUtilisateur;
 gainOrdi.innerHTML = pointOrdi;
