@@ -79,4 +79,6 @@ body {
   color: rgb(202, 0, 70);
   text-align: center;
 }
-
+button{
+  margin-top: 1.5rem ;
+}
