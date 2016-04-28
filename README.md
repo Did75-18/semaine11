@@ -10,7 +10,7 @@ Pour jouer [c'est ici](https://preview.c9users.io/did75_18/semaine11/exo1/index.
 
 #### exo02  
 
-##### en cours !!!! 
+##### houu j'en ai bavé !!!! 
 
 ----------  
 
