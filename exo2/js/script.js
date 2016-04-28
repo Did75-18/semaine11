@@ -122,7 +122,6 @@ function choixOrdi(){
   
 };
 
-
 pierre.onclick = choixUtilisateurPierre;
 ciseaux.onclick = choixUtilisateurCiseaux;
 feuille.onclick = choixUtilisateurFeuille;
