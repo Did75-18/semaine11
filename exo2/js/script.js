@@ -52,14 +52,14 @@ function comparer(){
         if(choixOrdinateur === "Pierre"){
             return txtResult.innerHTML = "'La pierre gagne !!!'";
         }else{
-            return txtResult.innerHTML = " 'La feuille gagne !!!' ";
+            return txtResult.innerHTML = " 'Les ciseaux gagnent !!!' ";
         }
     }
     else if(choixUtilisateur === "Feuille"){
         if(choixOrdinateur === "Pierre"){
             return txtResult.innerHTML = "'La feuille gagne !!!'";
         }else{
-            return txtResult.innerHTML = "'Les ciseaux gagne !!!'";
+            return txtResult.innerHTML = "'Les ciseaux gagnent !!!'";
         }
     }
 };
@@ -100,8 +100,18 @@ function compter(){
 };
 
 function calculer(){
-    var Pourcent = Math.round((pointUtilisateur / (pointOrdi + pointUtilisateur)) * 100);
-    pourcentage.innerHTML = Pourcent + " " + "%";
+    var nbjeu = pointOrdi + pointUtilisateur;
+    var Pourcent = Math.round((pointUtilisateur / nbjeu) * 100);
+   // if (Pourcent === NaN) {
+        // pourcentage.innerHTML = "Pas de point pour l'instant";   
+   // }else{
+        pourcentage.innerHTML = Pourcent + " " + "%";
+         
+    //}
+
+    //console.log(nbjeu);
+    //console.log(Pourcent);
+
 };
 
 
@@ -121,6 +131,7 @@ function jouer(){
     calculer();
   
 };
+
 
 pierre.onclick = choixUtilisateurPierre;
 ciseaux.onclick = choixUtilisateurCiseaux;
