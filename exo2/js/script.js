@@ -102,16 +102,13 @@ function compter(){
 function calculer(){
     var nbjeu = pointOrdi + pointUtilisateur;
     var Pourcent = Math.round((pointUtilisateur / nbjeu) * 100);
-   // if (Pourcent === NaN) {
-        // pourcentage.innerHTML = "Pas de point pour l'instant";   
-   // }else{
-        pourcentage.innerHTML = Pourcent + " " + "%";
-         
-    //}
-
+   if (nbjeu === 0) {
+         pourcentage.innerHTML = nbjeu + " " + "%";   
+   }else{
+        pourcentage.innerHTML = Pourcent + " " + "%";  
+    }
     //console.log(nbjeu);
     //console.log(Pourcent);
-
 };
 
 
