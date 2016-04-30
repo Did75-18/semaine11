@@ -61,7 +61,11 @@ function comparer(){
         }else{
             return txtResult.innerHTML = "'Les ciseaux gagnent !!!'";
         }
+
     }
+        else {
+            return txtResult.innerHTML = " 'Vous devez d'abord faire votre choix' ";
+        }
 };
 
 function compter(){
